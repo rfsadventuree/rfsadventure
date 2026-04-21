@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFS ADVENTURE | Trip Gunung Jawa Tengah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navyBlue: '#0c4a6e',
+                        skyBlue: '#0284c7',
+                        accentOrange: '#f97316',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(12, 74, 110, 0.75), rgba(12, 74, 110, 0.9)), 
+                        url('https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Hover Effect Customization */
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgba(12, 74, 110, 0.25);
+            border-color: #0284c7;
+        }
+        .service-card .icon-box {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover .icon-box {
+            background-color: #0c4a6e;
+            color: #ffffff;
+            transform: scale(1.1) rotate(5deg);
+        }
+    </style>
+</head>
+<body class="font-poppins bg-slate-50 text-slate-800">
+
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-navyBlue tracking-tighter">
+                RFS <span class="text-skyBlue">ADVENTURE</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 font-medium text-navyBlue/80">
+                <a href="#home" class="hover:text-skyBlue transition-colors duration-300">Home</a>
+                <a href="#services" class="hover:text-skyBlue transition-colors duration-300">Services</a>
+                <a href="#destinations" class="hover:text-skyBlue transition-colors duration-300">Destinations</a>
+                <a href="#why-us" class="hover:text-skyBlue transition-colors duration-300">About</a>
+            </div>
+            
+            <a href="https://wa.me/6285117299874" class="bg-accentOrange text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 active:scale-95">
+                Booking Sekarang
+            </a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-center px-6 pt-20">
+        <div class="max-w-4xl">
+            <span class="text-skyBlue bg-sky-100/10 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest mb-4 inline-block animate-pulse">SELAMAT DATANG DI RFS ADVENTURE</span>
+            <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Taklukkan Puncak <br><span class="text-skyBlue">Jawa Tengah</span> Bersama Kami
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Penyedia layanan pendakian profesional <strong>Camp</strong> atau <strong>Tektok</strong>. Aman, Terpercaya, & Berkesan.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6285117299874" target="_blank" class="bg-accentOrange text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition transform shadow-lg">Cek Jadwal Trip</a>
+                <a href="#destinations" class="bg-white/10 text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition backdrop-blur-sm">Lihat Destinasi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-navyBlue mb-4">Layanan Unggulan</h2>
+            <div class="w-20 h-1 bg-skyBlue mx-auto rounded-full mb-4"></div>
+            <p class="text-slate-500">Solusi lengkap untuk partner pendakian Anda di wilayah Jawa Tengah.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="service-card bg-white p-8 rounded-3xl border border-slate-100 shadow-md">
+                <div class="icon-box w-14 h-14 bg-sky-100 text-skyBlue rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-users text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-navyBlue mb-3">Open Trip</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Gabung rombongan dan temukan teman baru. Jadwal rutin setiap akhir pekan dengan biaya lebih hemat.</p>
+                <span class="text-xs font-bold text-skyBlue bg-sky-50 px-3 py-1 rounded-full uppercase border border-sky-100">Mulai 350k</span>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-3xl border border-slate-100 shadow-md">
+                <div class="icon-box w-14 h-14 bg-sky-100 text-skyBlue rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-tent text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-navyBlue mb-3">Private Trip</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Eksklusif untuk grup Anda. Tersedia opsi <strong>Camp</strong> atau <strong>Tektok</strong> dengan tanggal yang bisa dicustom.</p>
+                <span class="text-xs font-bold text-skyBlue bg-sky-50 px-3 py-1 rounded-full uppercase border border-sky-100">Custom Date</span>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-3xl border border-slate-100 shadow-md">
+                <div class="icon-box w-14 h-14 bg-sky-100 text-skyBlue rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-box-open text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-navyBlue mb-3">Jasa Porter</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Bawa beban ringan, nikmati perjalanan. Porter kami siap membantu logistik, tenda, hingga urusan dapur.</p>
+                <span class="text-xs font-bold text-skyBlue bg-sky-50 px-3 py-1 rounded-full uppercase border border-sky-100">Lokal Ahli</span>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-3xl border border-slate-100 shadow-md">
+                <div class="icon-box w-14 h-14 bg-sky-100 text-skyBlue rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-map-location-dot text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-navyBlue mb-3">Guide Lokal</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">Pendakian aman didampingi guide berpengalaman yang paham medan, cuaca, dan sejarah lokal.</p>
+                <span class="text-xs font-bold text-skyBlue bg-sky-50 px-3 py-1 rounded-full uppercase border border-sky-100">P3K Certified</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="bg-navyBlue py-24 text-white overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl md:text-5xl font-bold mb-8">Mengapa Harus <br><span class="text-skyBlue">RFS ADVENTURE?</span></h2>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-5 group">
+                        <div class="text-accentOrange text-3xl transition-transform group-hover:scale-125 duration-300"><i class="fa-solid fa-id-card"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Kopetensi Tim</h4>
+                            <p class="text-sm text-slate-400">Seluruh crew lapangan kami, baik pemandu (guide) maupun porter, merupakan personel berpengalaman yang memiliki pengetahuan mendalam mengenai karakteristik medan di Jawa Tengah. Kami mengutamakan personel yang dibekali dengan kemampuan navigasi darat, manajemen ekspedisi, serta prosedur pertolongan pertama pada kecelakaan (P3K).</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 group">
+    <div class="text-accentOrange text-3xl transition-transform group-hover:scale-125 duration-300">
+        <i class="fa-solid fa-shield-halved"></i>
+    </div>
+    <div>
+        <h4 class="font-bold text-xl mb-2">Manajemen Risiko yang Komprehensif</h4>
+        <p class="text-sm text-slate-400 mb-3">
+            Keselamatan peserta adalah prioritas utama kami. Kami menerapkan standar operasional prosedur (SOP) yang ketat melalui:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-400 ml-4 list-none">
+            <li class="flex gap-2">
+                <span class="text-skyBlue font-bold">1.</span>
+                <span><strong>Analisis Cuaca :</strong> Pemantauan prakiraan cuaca secara berkala sebelum dan selama pendakian.</span>
+            </li>
+            <li class="flex gap-2">
+                <span class="text-skyBlue font-bold">2.</span>
+                <span><strong>Pemeriksaan Kesehatan :</strong> Memastikan setiap peserta dalam kondisi fisik yang memadai sebelum memulai aktivitas.</span>
+            </li>
+            <li class="flex gap-2">
+                <span class="text-skyBlue font-bold">3.</span>
+                <span><strong>Komunikasi Terpadu :</strong> Koordinasi intensif dengan otoritas basecamp setempat guna mitigasi keadaan darurat.</span>
+            </li>
+        </ul>
+    </div>
+                </div>
+                </div>
+                    </div>
+                    <div class="flex gap-5 group">
+    <div class="text-accentOrange text-3xl transition-transform group-hover:scale-125 duration-300">
+        <i class="fa-solid fa-bolt"></i>
+    </div>
+    <div>
+        <h4 class="font-bold text-xl mb-2">Layanan Adaptif (Tektok & Camp)</h4>
+        <p class="text-sm text-slate-400 mb-3">
+            Kami memahami bahwa setiap pendaki memiliki kebutuhan yang berbeda. Oleh karena itu, RFS Adventure menyediakan layanan yang fleksibel:
+        </p>
+        <ul class="space-y-2 text-sm text-slate-400 ml-4 list-none mb-8">
+            <li class="flex gap-2">
+                <span class="text-skyBlue font-bold">1.</span>
+                <span><strong>Layanan Tektok :</strong> Bagi profesional dengan keterbatasan waktu, kami menyediakan pemanduan pendakian cepat (naik-turun dalam hari yang sama) dengan manajemen ritme yang terukur.</span>
+            </li>
+            <li class="flex gap-2">
+                <span class="text-skyBlue font-bold">2.</span>
+                <span><strong>Private & Open Trip :</strong> Opsi perjalanan yang dapat disesuaikan dengan privasi kelompok Anda atau bergabung dalam jadwal rutin kami.</span>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="lg:w-1/2 relative">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="foto1.png" class="rounded-3xl shadow-2xl mt-12 hover:scale-105 transition duration-500" alt="Mountain">
+                    <img src="foto2.jpg" class="rounded-3xl shadow-2xl hover:scale-105 transition duration-500" alt="Hiking">
+                </div>
+                <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-skyBlue/20 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-navyBlue mb-4">Destinasi Populer</h2>
+            <div class="w-20 h-1 bg-skyBlue mx-auto rounded-full mb-4"></div>
+            <p class="text-slate-500">Jelajahi keindahan pegunungan Jawa Tengah bersama kami.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative group overflow-hidden rounded-3xl h-[450px] shadow-lg cursor-pointer">
+                <img src="foto3.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Gunung Slamet">
+                <div class="absolute inset-0 bg-gradient-to-t from-navyBlue via-transparent to-transparent opacity-80 group-hover:opacity-90 transition duration-500"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white transform group-hover:translate-y-[-10px] transition duration-500">
+                    <span class="text-accentOrange font-bold text-xs uppercase mb-2">Terpopuler</span>
+                    <h4 class="text-3xl font-bold">Gunung Slamet</h4>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2 italic">The Highest of Central Java - 3.428 MDPL</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-3xl h-[450px] shadow-lg cursor-pointer">
+                <img src="foto4.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Gunung Merbabu">
+                <div class="absolute inset-0 bg-gradient-to-t from-navyBlue via-transparent to-transparent opacity-80 group-hover:opacity-90 transition duration-500"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white transform group-hover:translate-y-[-10px] transition duration-500">
+                    <span class="text-skyBlue font-bold text-xs uppercase mb-2">Savana Terbaik</span>
+                    <h4 class="text-3xl font-bold">Gunung Merbabu</h4>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2 italic">The Golden Savanna View</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-3xl h-[450px] shadow-lg cursor-pointer">
+                <img src="foto5.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Gunung Sumbing">
+                <div class="absolute inset-0 bg-gradient-to-t from-navyBlue via-transparent to-transparent opacity-80 group-hover:opacity-90 transition duration-500"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-10 text-white transform group-hover:translate-y-[-10px] transition duration-500">
+                    <span class="text-skyBlue font-bold text-xs uppercase mb-2">Jalur Menantang</span>
+                    <h4 class="text-3xl font-bold">Gunung Sumbing</h4>
+                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2 italic">Triple S - Sindoro Sumbing Slamet View</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-100 pt-24 pb-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-3xl font-bold text-navyBlue mb-6">
+                    RFS <span class="text-skyBlue">ADVENTURE</span>
+                </div>
+                <p class="text-slate-500 mb-8 max-w-sm leading-relaxed">Jasa Trip Organizer Gunung profesional di Jawa Tengah. Mari mendaki dengan aman dan bahagia bersama kami.</p>
+                <div class="flex gap-5">
+    <a href="https://wa.me/6285117299874" target="_blank" class="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-navyBlue hover:bg-skyBlue hover:text-white transition-all duration-300 shadow-sm">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+    </a>
+    
+    <a href="https://instagram.com/rickyfbyann_" target="_blank" class="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-navyBlue hover:bg-skyBlue hover:text-white transition-all duration-300 shadow-sm">
+        <i class="fa-brands fa-instagram text-xl"></i>
+    </a>
+    
+    <a href="https://tiktok.com/@ricky_fabian2" target="_blank" class="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-navyBlue hover:bg-skyBlue hover:text-white transition-all duration-300 shadow-sm">
+        <i class="fa-brands fa-tiktok text-xl"></i>
+    </a>
+</div>
+            </div>
+            
+            <div>
+                <h5 class="font-bold text-navyBlue mb-8 uppercase tracking-widest text-xs">Informasi Kontak</h5>
+                <ul class="space-y-5 text-slate-500 text-sm">
+                    <li class="flex gap-4 items-start"><i class="fa-solid fa-location-dot text-skyBlue mt-1"></i> <span>Ngadiwinatan 1, Karanganyar, Borobudur, Jawa Tengah, Indonesia</span></li>
+                    <li class="flex gap-4 items-center"><i class="fa-solid fa-envelope text-skyBlue"></i> <span>rfsadventuree@gmail.com</span></li>
+                    <li class="flex gap-4 items-center"><i class="fa-solid fa-phone text-skyBlue"></i> <span>+62 851-1729-9874</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold text-navyBlue mb-8 uppercase tracking-widest text-xs">Layanan Kami</h5>
+                <ul class="space-y-4 text-slate-500 text-sm">
+                    <li><a href="#services" class="hover:text-skyBlue transition-colors">Open Trip Terjadwal</a></li>
+                    <li><a href="#services" class="hover:text-skyBlue transition-colors">Private Trip Tektok</a></li>
+                    <li><a href="#services" class="hover:text-skyBlue transition-colors">Private Trip Camping</a></li>
+                    <li><a href="#services" class="hover:text-skyBlue transition-colors">Guide & Porter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-6 pt-12 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-xs">
+            <p>&copy; 2026 RFS ADVENTURE. All Fights Reserved.</p>
+            <p class="font-semibold text-navyBlue/20 tracking-widest">Created by @rickyfbyann_</p>
+        </div>
+    </footer>
+
+</body>
+</html>
